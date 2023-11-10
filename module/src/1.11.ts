@@ -46,6 +46,7 @@
 
     const nullFunction = (value: number | null) => {
         if (value) {
+            // console.log(typeof value)
             console.log("not null value")
         }
         else {
@@ -54,6 +55,21 @@
     }
 
     nullFunction(null)
+
+    const getSpeedInMeterPerSecond = (value: unknown) => {
+        if (typeof value === 'number') {
+            const converterSpeed = (value * 1000) / 3600;
+            // console.log(`The speed is ${converterSpeed} ms^-1`);
+
+        }
+        if (typeof value === "string") {
+            const valueInNumber = value.split(" ")
+            console.log(valueInNumber)
+        }
+    }
+
+
+    getSpeedInMeterPerSecond(`1000 ms^-1`)
 
 
 
