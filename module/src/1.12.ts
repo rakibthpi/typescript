@@ -14,8 +14,8 @@
 
     const getSpeedInMeterPerSecond = (value: unknown) => {
         if (typeof value === "number") {
-            const converterSpeed =
-                // console.log(`The speed is ${value}`)
+            const converterSpeed = value * 200;
+            // console.log(`The speed is ${value}`)
         }
     }
 
