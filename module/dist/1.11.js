@@ -26,6 +26,7 @@ var _a;
     console.log(permanentaddress);
     const nullFunction = (value) => {
         if (value) {
+            // console.log(typeof value)
             console.log("not null value");
         }
         else {
@@ -35,9 +36,15 @@ var _a;
     nullFunction(null);
     const getSpeedInMeterPerSecond = (value) => {
         if (typeof value === 'number') {
-            const converterSpeed = (value * 1000);
-            console.log(`The speed is ${converterSpeed} ms^-1`);
+            const converterSpeed = (value * 1000) / 3600;
+            // console.log(`The speed is ${converterSpeed} ms^-1`);
+        }
+        if (typeof value === "string") {
+            const valueInNumber = value.split(" ");
+            console.log(valueInNumber);
         }
     };
-    getSpeedInMeterPerSecond(1000);
+    getSpeedInMeterPerSecond(`1000 ms^-1`);
+    // tuple 
+    const manush = ['Mr. x', 'Ms. y'];
 }

@@ -69,7 +69,15 @@
     }
 
 
-    getSpeedInMeterPerSecond(`1000 ms^-1`)
+    getSpeedInMeterPerSecond(`1000 ms^-1`);
+
+
+    // tuple 
+
+    const manush: [string, string] = ['Mr. x', 'Ms. y'];
+
+
+
 
 
 
