@@ -5,7 +5,7 @@
     // const arrOfStrings: string[] = ['12', '892', '44', '33'];
 
     const arrNumber = arrOfNumbers.map((number) => number.toString())
-    console.log(arrNumber);
+    // console.log(arrNumber);
 
 
     // area number 
